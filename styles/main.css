@@ -1,0 +1,306 @@
+* {
+	box-sizing: border-box; }
+
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: 'Helvetica', 'Verdana', sans-serif;
+	font-weight: 400;
+	font-display: optional;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; 
+}
+
+
+html {
+	overflow: hidden;
+}
+
+body {
+	display: -webkit-box;
+  	display: -webkit-flex;
+  	display: -ms-flexbox;
+  	display: flex;
+  	-webkit-box-orient: vertical;
+  	-webkit-box-direction: normal;
+  	-webkit-flex-direction: column;
+      	-ms-flex-direction: column;
+          	flex-direction: column;
+  	-webkit-flex-wrap: nowrap;
+      	-ms-flex-wrap: nowrap;
+          	flex-wrap: nowrap;
+  	-webkit-box-pack: start;
+  	-webkit-justify-content: flex-start;
+      	-ms-flex-pack: start;
+          	justify-content: flex-start;
+  	-webkit-box-align: stretch;
+  	-webkit-align-items: stretch;
+      	-ms-flex-align: stretch;
+          	align-items: stretch;
+  	-webkit-align-content: stretch;
+      	-ms-flex-line-pack: stretch;
+          	align-content: stretch;
+  overflow-y: hidden; // hide vertical
+  overflow-x: hidden;
+  	background: #fff; 
+}
+
+.header {
+	width: 100%;
+	height: 56px;
+	color: #000000;
+	background: #b2e9fe;
+	position: fixed;
+	font-size: 20px;
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+	padding: 8px 16px 16px 8px;
+	will-change: transform;	
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-transition: -webkit-transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s;
+  transition: -webkit-transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s;
+  transition: transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s;
+  transition: transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s, -webkit-transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s;
+  z-index: 1000;}
+  .header .headerButton {
+    width: 35px;
+    height: 35px;
+    text-indent: -30000px;
+    overflow: hidden;
+    opacity: 0.54;
+    -webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+    transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+    border: none;
+    outline: none;
+    cursor: pointer; }
+  .header #butAlert {
+    background: url(/images/announcements.svg) center center no-repeat;
+    background-size: contain; }
+
+.header__title {
+	font-weight: 400;
+	font-size: 20px;
+	margin: 0;
+  text-align: center;
+  padding-top: 8px;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+		  -ms-flex: 1;
+			    flex: 1; }
+
+.loader {
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  .loader #spinner {
+    box-sizing: border-box;
+    stroke: #00b7b8;
+    stroke-width: 3px;
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-animation: line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite;
+            animation:line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite; }
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg); } }
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg); } }
+
+@-webkit-keyframes line {
+  0% {
+    stroke-dasharray: 2, 85.964;
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    stroke-dasharray: 65.973, 21.9911;
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dasharray: 2, 85.964;
+    stroke-dashoffset: -65.973;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); } }
+
+@keyframes line {
+  0% {
+    stroke-dasharray: 2, 85.964;
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    stroke-dasharray: 65.973, 21.9911;
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dasharray: 2, 85.964;
+    stroke-dashoffset: -65.973;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); } }            
+
+.main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+	padding-top: 60px;
+	position: border-box;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+	background: #fff;
+	border-radius: 2px;
+	margin-top: 16px;
+  margin-left: 14px;
+  margin-right: 16px;
+  margin-bottom: 8px   }
+  .mainButtons {
+    min-height:95%;
+    height:100%
+    min-width: 30%;
+    width: 48.2%;
+    text-indent: -30000px;
+    overflow: hidden;
+    opacity: 1;
+    box-sizing: border-box;
+    border-radius: 2px; 
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    -webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+    transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+    border: none;
+    outline: none;
+    cursor: pointer; }
+    .main #butPrayers { 
+      background: url(/images/prayers.jpg) center center no-repeat;
+      background-size: contain;
+      margin-right: 4px;
+      margin-left: 2px; 
+      margin-bottom: 8px; }
+    .main #butGallery {
+      background: url(/images/gallery.jpg) center center no-repeat;
+      background-size: contain;
+      margin-bottom: 8px; }
+    .main #butCalendar {
+      background: url(/images/calendar.jpg) center center no-repeat;
+      background-size: contain;
+      margin-right: 4px;
+      margin-left: 2px; 
+      margin-bottom: 8px; }
+    .main #butCandles {
+      background: url(/images/candles.jpg) center center no-repeat;
+      background-size: contain;
+      margin-bottom: 8px; }
+    .main #butAbout {
+      min-width: 95%;
+      width: 99%;
+      background: url(/images/about.jpg) center center no-repeat;
+      background-size: contain;
+      margin-left: 2px;
+      marker-right: 2px;
+      margin-bottom: 8px; }
+  .socialButtons {
+    min-height:90%;
+    height:100%
+    min-width: 30%;
+    width: 32%;
+    text-indent: -30000px;
+    -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+    overflow: hidden;
+    opacity: 1;
+    -webkit-transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+    transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+    border: none;
+    outline: none;
+    cursor: pointer; }
+    .main #butTwitter {
+      background: url(/images/twitter.svg) center center no-repeat;
+      background-size: contain; }
+    .main #butFacebook {
+      background: url(/images/facebook.png) center center no-repeat;
+      background-size: contain; }
+    .main #butInstagram {
+      background: url(/images/instagram.png) center center no-repeat;
+      background-size: contain; }
+
+.main .topButtons  {
+  -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+
+.main .midButtons {
+  -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+
+.main .bottomButton {
+  -webkit-box-flex: 0.5;
+      -webkit-flex: 0.5;
+          -ms-flex: 0.5;
+              flex: 0.5; }
+
+.main .footer {
+  -webkit-box-flex: 0.4;
+      -webkit-flex: 0.4;
+          -ms-flex: 0.4;
+              flex: 0.4; }
