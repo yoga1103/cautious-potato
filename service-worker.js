@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-var cacheName = 'pwav2';
+var cacheName = 'pwav3';
 var filesToCache = [
   '/',
   '/index.html',

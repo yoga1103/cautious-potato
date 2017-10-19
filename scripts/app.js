@@ -17,41 +17,41 @@
 
 	document.getElementById('butPrayers').addEventListener('click', function() {
     	// Load the prayers page
-    	window.location.href = "/prayers.html";
+    	window.location.href = "https://bahainf.mystagingwebsite.com/200-prayers/";
   	});
 
   	document.getElementById('butGallery').addEventListener('click', function() {
     	// Load the gallery page
-    	window.location.href = "/prayers.html";
+    	window.location.href = "https://bahainf.mystagingwebsite.com/my-gallery/";
   	});
 
   	document.getElementById('butCalendar').addEventListener('click', function() {
-    	// Load the gallery page
-    	window.location.href = "/prayers.html";
+    	// Load the calendar page
+    	window.location.href = "https://bahainf.mystagingwebsite.com/";
   	});
 
   	document.getElementById('butCandles').addEventListener('click', function() {
-    	// Load the gallery page
-    	window.location.href = "/prayers.html";
+    	// Load the candles page
+    	window.location.href = "https://bahainf.mystagingwebsite.com/celebration-of-bicentennial-birth-anniversary-of-bahaullah/";
   	});
 
   	document.getElementById('butAbout').addEventListener('click', function() {
-    	// Load the gallery page
-    	window.location.href = "/prayers.html";
+    	// Load the about page
+    	window.location.href = "https://bahainf.mystagingwebsite.com/about-the-bahais-of-north-florida/";
   	});
 
   	document.getElementById('butTwitter').addEventListener('click', function() {
-    	// Load the twitter app
-    	window.location.href = "twitter://user?id=768116050479251457";
+    	// Load the twitter page
+    	window.location.href = "https://twitter.com/BahaiNorthFL";
   	});
 
   	document.getElementById('butFacebook').addEventListener('click', function() {
-    	// Load the facebook app
-    	window.location.href = "fb://page/bahainorthflorida";
+    	// Load the facebook page
+    	window.location.href = "https://www.facebook.com/groups/bahainorthflorida/";
   	});
 
   	document.getElementById('butInstagram').addEventListener('click', function() {
-    	// Load the instagram app
+    	// Load the instagram page
     	window.location.href = "http://instagram.com/_u/bahainorthflorida";
   	});
 
