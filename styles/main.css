@@ -228,29 +228,29 @@ body {
     cursor: pointer; }
     .main #butPrayers { 
       background: url(/images/prayers.jpg) center center no-repeat;
-      background-size: contain;
+      background-size: cover;
       margin-right: 4px;
       margin-left: 2px; 
       margin-bottom: 8px; }
     .main #butGallery {
       background: url(/images/gallery.jpg) center center no-repeat;
-      background-size: contain;
+      background-size: cover;
       margin-bottom: 8px; }
     .main #butCalendar {
       background: url(/images/calendar.jpg) center center no-repeat;
-      background-size: contain;
+      background-size: cover;
       margin-right: 4px;
       margin-left: 2px; 
       margin-bottom: 8px; }
     .main #butCandles {
       background: url(/images/candles.jpg) center center no-repeat;
-      background-size: contain;
+      background-size: cover;
       margin-bottom: 8px; }
     .main #butAbout {
       min-width: 95%;
       width: 99%;
       background: url(/images/about.jpg) center center no-repeat;
-      background-size: contain;
+      background-size: cover;
       margin-left: 2px;
       marker-right: 2px;
       margin-bottom: 8px; }
